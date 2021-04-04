@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+	
+	<style>
+.Box {
+width: 400px;
+  height: 25%;
+}
+</style>
+<style>
+.Box2 {
+  margin: 100px;
+  height: 25%;
+  width: 100%;
+}
+</style>
+	
+	
+	</style>
+
+<style>
+.TextT {
+  margin: 10px;
+ 
+}
+</style>
+
+<style>
+.TextT2 {
+  height: 50%;
+  width: 50%;
+}
+</style>
+
+<style>
+.card-img-top {
+border-top-left-radius:.25rem;border-top-right-radius:.25rem;
+}
+</style>
+
+<style>
+.container {
+ margin-top: 8%;
+    margin-left: 8%;
+	
+}
+</style>
+
+<style>
+.card:hover {
+   -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+</style>
+
+<style>
+.readmore {
+  margin-bottom: 100px;
+  
+}
+</style>
+
+<style>
+.MainBoxCol {
+  background-color: #71B7B9;
+  color: white;
+  float: right :
+  col-md-12;
+  margin: 10px;
+  
+  
+}
+</style>
+
+
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+
+	<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+	
+	 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+ integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+ crossorigin="anonymous"></script>
+ <!-- Descriptions -->
+ <script src="PlaceListOfDescriptions.js">     
+	</script>
+ <!-- Images -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 
+ <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+ <script src="PlaceListOfImages.js">     
+ </script>
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+
+	 
+	 
+	 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style.css">
+	<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GSSETM2DPM"></script>
+<script>
+var _0x30dc=['push','config','G-GSSETM2DPM','dataLayer'];(function(_0x3e996b,_0x30dc95){var _0x27bb04=function(_0x29e755){while(--_0x29e755){_0x3e996b['push'](_0x3e996b['shift']());}};_0x27bb04(++_0x30dc95);}(_0x30dc,0x16b));var _0x27bb=function(_0x3e996b,_0x30dc95){_0x3e996b=_0x3e996b-0x0;var _0x27bb04=_0x30dc[_0x3e996b];return _0x27bb04;};function gtag(){dataLayer[_0x27bb('0x1')](arguments);}window[_0x27bb('0x0')]=window[_0x27bb('0x0')]||[],gtag('js',new Date()),gtag(_0x27bb('0x2'),_0x27bb('0x3'));
+</script>
+	
+<!-- Global site tag (gtag.js) - Google Analytics -->			
+
+
+
+
+
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://image.winudf.com/v2/image1/Y29tLnBpcmF0ZXNkcm9pZC5yb290Z3lhbl9pY29uXzE1NjE3Njk5MTFfMDY2/icon.png?w=170&fakeurl=1" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Pirates Droid</b></h4>
+   
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Home</a>
+	<a href="#Address" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-address-book fa-fw w3-margin-right"></i>Address</a>	
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#Locations" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-android fa-fw w3-margin-right"></i>App</a>
+	<a href="whatsapp://send?text=You can see Information About Famous, Natural, Religious, Ancient Places Near You, 
+	Along With The Location an Photos In This App. https://play.google.com/store/apps/details?id=com.piratesdroid.rootgyan" data-action="share/whatsapp/share"onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-whatsapp fa-fw w3-margin-right"></i>Whatsapp</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Pirates Droid</b></h1>
+
+    </div>
+  </header>
+  
+    <div class="w3-container">
+    
+    
+    </div>
+  
+ 
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    
+<h2 id="Title">Pirates Droid</h2>
+
+  
+  </div>
+ <script src="SingleValue.js"></script>
+  </footer>
+  
+  
+  
+  <!-- First Photo Grid-->
+  
+  
+  <div >
+																		
+	
+		<div class="container">
+        <div class="row" id="card-list" > </div>
+    </div>
+  
+  
+  
+
+	
+	
+	
+	<div >
+	
+<div >
+			<div id="previousOrders"   >
+				<!-- We will use javascript to insert html for the orders list here -->
+				<!-- if you don't want orders to show on the homepage, you can duplicate the page and remove this from here, leave the other one with a werid name so only you can find it -->
+			</div>
+		</div>
+	
+		</div>
+<!-- First Photo Grid-->
+
+<!-- Share Code-->
+
+<div id="socialSharing">
+    <a href="http://www.facebook.com/sharer.php?u=[URL_FULL]">
+        <span id="facebook" class="fa-stack fa-lg">
+            <i class="fa fa-facebook fa-stack-1x"></i>
+        </span>
+    </a>
+    <a href="http://twitter.com/share?text=[TITLE]&url=[URL_FULL]&hashtags=[HASTAG]">
+        <span id="twitter" class="fa-stack fa-lg">
+            <i class="fa fa-twitter fa-stack-1x"></i>
+        </span>
+    </a>
+    <a href="http://pinterest.com/pin/create/button/?url=[URL_FULL]&description=[TITLE]" class="pin-it-button" count-layout="horizontal">
+        <span id="pinterest" class="fa-stack fa-lg">
+            <i class="fa fa-pinterest-p fa-stack-1x"></i>
+        </span>
+    </a>
+    <a href="https://plus.google.com/share?url=[URL_FULL]">
+        <span id="googleplus" class="fa-stack fa-lg">
+            <i class="fa fa-google-plus fa-stack-1x"></i>
+        </span>
+    </a>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=[URL_FULL]&title=[TITLE]&source=[SITE_NAME]">
+        <span id="linkedin" class="fa-stack fa-lg">
+            <i class="fa fa-linkedin fa-stack-1x"></i>
+        </span>
+    </a>
+    <a href="whatsapp://send?&text=[TITLE] [URL_FULL]" data-action="share/whatsapp/share" data-text="Text you want to Share" >
+        <span id="whatsapp" class="fa-stack fa-lg">
+            <i class="fa fa-whatsapp fa-stack-1x"></i>
+        </span>
+    </a>
+</div>
+
+<!-- Share Code-->
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+   
+  </div>
+
+ <!-- Images of Me -->
+
+  <div class="w3-row-padding w3-padding-16" id="Address">
+    
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>Address</b></h4>
+    	<hr>
+    
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    
+<p id="Add">please wait.....</p>
+  <script src="SingleValue.js"></script>
+
+  </div>
+    </div>
+  </footer>
+
+ <!-- Images of Me -->
+
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    	<hr>
+    
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    
+<p> You can see Information About Famous, Natural, Religious, Ancient Places Near You, Along With The Location an Photos In This App.</p>
+
+
+  </div>
+  </footer>
+  
+  
+    <div class="w3-row-padding w3-padding-16" id="Locations">
+ 
+  </div>
+
+
+
+
+
+
+
+
+
+    <h3>Location On Map</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 19.0760, lng: 72.8777};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0w2dY7OZvF6nBvnLLxzAzXi05l_8jc-o&callback=initMap">
+    </script>
+ 
+  <!-- Location-->
+  
+  </div>
+  </footer>
+  
+
+     <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.piratesdroid.com" title="Pirates Droid" target="_blank" class="w3-hover-opacity">Pirates Droid <a>
+  <a  href='https://play.google.com/store/apps/details?id=com.piratesdroid.rootgyan&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="width:165px;" /></a>
+</div>
+
+
+
+
+
+<!-- End page content -->
+</div>
+
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+
+
+</body>
+
+  	<!-- Title -->
+
+<title>Pirates Droid - Place </title>
+<title  id="Title2"> </title>
+<script src="SingleValue.js"></script>
+	<!-- Title -->
+</html>
+
+

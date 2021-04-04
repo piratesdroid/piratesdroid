@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<style>
+
+.header-img {
+  width: 100%;
+  height: 300px;
+  background: url('IMG/Pratapgad-Fort-pixahive.jpg');
+
+  background-size: cover;
+}
+</style>
+
+
+
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+
+<style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+	
+	<style>
+.Box {
+width: 400px;
+  height: 25%;
+}
+</style>
+<style>
+.Box2 {
+  margin: 100px;
+  height: 25%;
+  width: 100%;
+}
+</style>
+	
+	
+	</style>
+
+<style>
+.TextT {
+  margin: 10px;
+ 
+}
+</style>
+
+<style>
+.TextT2 {
+  height: 50%;
+  width: 50%;
+}
+</style>
+
+<style>
+.card-img-top {
+border-top-left-radius:.25rem;border-top-right-radius:.25rem;
+}
+</style>
+
+<style>
+.container {
+margin-left: auto;
+  margin-right: auto;
+	
+}
+</style>
+
+
+<style>
+.center  {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+	
+}
+</style>
+<style>
+.card:hover {
+   -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.75);
+}
+</style>
+
+<style>
+.readmore {
+  margin-bottom: 100px;
+  
+}
+</style>
+
+
+
+
+
+<style>
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: linear-gradient(50deg, #49a09d, #F37D2B);
+  font-family: sans-serif;
+  font-weight: 100;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+table {
+  margin-left: 30px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+th,
+td {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+th {
+  text-align: left;
+}
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+
+
+.header {
+   background-color:#0A8070;
+   color: white;
+   font-size: 1.5em;
+   padding: 1rem;
+   text-align: center;
+   text-transform: uppercase;
+}
+</style>
+
+
+
+<style>
+/* unvisited link */
+a:link {
+  color: #FAFAFA;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All Fort list with Latitude Longitude Address on map</title>
+	  <meta name="description" content="get information about forts - latitude , longitude , address , State">
+  <meta name="keywords" content="latitude, longitude,address,forts,list,State,india,Maharashtra
+">
+  <meta name="author" content="piratesdroid.com">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  
+	<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<style>
+<body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="https://image.winudf.com/v2/image1/Y29tLnBpcmF0ZXNkcm9pZC5yb290Z3lhbl9pY29uXzE1NjE3Njk5MTFfMDY2/icon.png?w=170&fakeurl=1" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Pirates Droid</b></h4>
+   
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Home</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+    <a href="#Locations" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-file_download fa-fw w3-margin-right"></i>App</a>
+  </div>
+  <div class="w3-panel w3-large">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="https://image.winudf.com/v2/image1/Y29tLnBpcmF0ZXNkcm9pZC5yb290Z3lhbl9pY29uXzE1NjE3Njk5MTFfMDY2/icon.png?w=170&fakeurl=1" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div >
+	
+	<header > 
+	<h1 class="w3-container w3-center "><b>Pirates Droid</b></h1>
+	
+	    <div class="header-img">
+	
+
+	
+	</div>
+	
+	
+	
+  
+</header>
+    
+
+
+    <div class="w3-section w3-bottombar w3-padding-16">
+	
+	  <div style="margin-left: 30px;">
+      
+      <button class="w3-button w3-black">ALL</button>
+      <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Place</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
+      <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Locations</button>
+    </div>
+	
+    
+    </div>
+    </div>
+  </header>
+  
+  <!-- First Photo Grid-->
+
+	
+	<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div  class="w3-container">
+
+
+				
+					<table >
+	
+		<tbody >
+
+	
+	
+	
+				<div>
+			
+			<div id="previousOrders"   >
+			
+
+				<!-- We will use javascript to insert html for the orders list here -->
+				<!-- if you don't want orders to show on the homepage, you can duplicate the page and remove this from here, leave the other one with a werid name so only you can find it -->
+			</div>
+		</div>
+		
+		
+			
+		</tbody>
+	</table>			
+				
+
+  <!-- Blog entry -->
+<div class="container">
+																		<div id="card-list" class="columns is-mobile" >
+																		 
+																		 </div>
+	
+		
+
+
+	</div>
+		 <script src="All_Fort_List.js">     
+ </script>
+  <hr>
+
+  <!-- Blog entry -->
+<!-- END BLOG ENTRIES -->
+
+
+
+
+
+
+</div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  
+  
+<hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <span class="w3-large">best Fort to visit in Maharashtra </span><br>
+      </li>
+	  
+	  
+	  
+ 
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!-- Labels / tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Top 10 places</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">India</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fort</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">blog</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ratnagiri</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">kokan </span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pune</span>
+	  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mumbai</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">nature</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">culture</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">history</span> 
+	  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Maharashtra</span>
+    </p>
+    </div>
+  </div>
+  
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div>
+
+	
+	
+	
+	
+<!-- First Photo Grid-->
+
+
+
+
+
+
+
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+   
+  </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    	<hr>
+    
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    
+<p> You can see Information About Famous, Natural, Religious, Ancient Places Near You, Along With The Location an Photos In This App.</p>
+
+
+  </div>
+  </footer>
+  
+  
+    <div class="w3-row-padding w3-padding-16" id="Locations">
+ 
+  </div>
+
+
+
+
+
+
+
+
+
+    <h3>All  Best place</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 19.0760, lng: 72.8777};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0w2dY7OZvF6nBvnLLxzAzXi05l_8jc-o&callback=initMap">
+    </script>
+ 
+  <!-- Location-->
+  
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.piratesdroid.com" title="Pirates Droid" target="_blank" class="w3-hover-opacity">Pirates Droid <a>
+  <a  href='https://play.google.com/store/apps/details?id=com.piratesdroid.rootgyan&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' style="width:165px;" /></a>
+</div>
+
+
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+
+
+</body>
+
+
+
+
+</html>
+
+
